@@ -1,5 +1,4 @@
 import "@fortawesome/fontawesome-free/css/all.css";
-import { Button } from "@nextui-org/react";
 
 const EmptyPostulation = ({ notFound }) => {
     return (

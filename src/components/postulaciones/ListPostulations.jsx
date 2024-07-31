@@ -10,7 +10,6 @@ import { filterPostulations } from "../../utils/filterPostulations.ts";
 export default function ListPostulations({
     localPostulations,
     setLocalPostulations,
-    setEmptyList,
     handleSubmit,
     dataPostulation,
     setDataPostulation,

@@ -3,7 +3,6 @@ import { emptyStorage } from "../../utils/emptyStorage";
 import { getPostulations } from "../../utils/getPostulations";
 
 const ModalDelete = ({
-    localPostulations,
     setLocalPostulations,
     setEmptyList,
     emptyList,
