@@ -63,17 +63,17 @@ export default function ListPostulations({
                     label="Buscar postulación"
                 />
 
-                <div className="max-sm:w-full max-sm:mt-[4%] flex justify-between w-1/2" >
+                <div className="max-sm:w-full max-sm:grid max-sm:grid-cols-1 max-sm:mt-[4%] flex justify-between w-1/2" >
                     <Select
                         variant="underlined"
                         placeholder="Ordenar por"
-                        className="w-[30%]"
+                        className={`w-[30%] max-sm:w-full`}
                         isDisabled={localDisabled}
                         onChange={handleSort}
                     >
                         {
                             optionsSort.map(op => (
-                                <SelectItem key={op}>
+                                <SelectItem className="max-sm:min-w-[80vw]" key={op}>
                                     {op}
                                 </SelectItem>
                             ))
@@ -83,7 +83,7 @@ export default function ListPostulations({
                     <Select
                         variant="underlined"
                         placeholder="Cargo"
-                        className="w-[30%]"
+                        className="w-[30%] max-sm:w-full"
                         onChange={handleCharge}
                         isDisabled={localDisabled}
                     >
@@ -99,7 +99,7 @@ export default function ListPostulations({
                     <Select
                         variant="underlined"
                         placeholder="Estado"
-                        className="w-[30%]"
+                        className="w-[30%] max-sm:w-full"
                         onChange={handleState}
                         isDisabled={localDisabled}
                     >
