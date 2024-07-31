@@ -46,7 +46,7 @@ const PopoverCard = ({
                     <i class="fa-solid fa-list-ul p-0 m-0 2xl:text-[1.3rem] text-[1rem] totalDark "></i>
                 </Button>
             </PopoverTrigger>
-            <PopoverContent className={`${!openPop ? "hidden" : "visible"} w-[35vw] shadow-2xl`}>
+            <PopoverContent className={`${!openPop ? "hidden" : "visible"} max-sm:w-[80vw] w-[35vw] shadow-2xl`}>
                 <div className="px-4 py-2 w-full">
 
                     <div className="flex justify-between">

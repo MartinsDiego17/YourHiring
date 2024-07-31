@@ -55,7 +55,9 @@ const ModalPostulation = ({
 
     return (
         <div className="w-1/2 max-sm:w-full flex justify-end place-items-center max-sm:flex-col gap-x-[5%]" >
-            <Button onPress={() => handleOpen(onOpen)} className="max-sm:my-[4%] 2xl:text-[1.1rem] buttonDefault rounded-full" >{buttonText} <i class={`iconAwesome ${classIconButton}`}></i></Button>
+            <Button onPress={() => handleOpen(onOpen)} className={`
+                ${typeof closePop === "function" && "max-sm:ml-auto"}
+                max-sm:my-[4%] 2xl:text-[1.1rem] buttonDefault rounded-full`} >{buttonText} <i class={`iconAwesome ${classIconButton}`}></i></Button>
             <Modal
                 isOpen={isOpen}
                 onOpenChange={onOpenChange}
