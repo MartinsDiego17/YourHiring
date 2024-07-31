@@ -1,0 +1,72 @@
+---
+interface Props {
+	title: string;
+}
+
+import "@fontsource-variable/inter-tight";
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon2.png" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+	body {
+		min-height: 100vh;
+		width: 100vw;
+		overflow-x: hidden;
+		background-attachment: fixed !important;
+		background: radial-gradient(circle at 50% 0%, #e8f9ff, transparent);
+	}
+
+	.extraLight {
+		color: #e0f5fe;
+	}
+	.light {
+		color: #7ce0fd;
+	}
+	.medium {
+		color: #009ed0;
+	}
+	.semiDark {
+		color: #0179a3;
+	}
+	.dark {
+		color: #0179a3;
+	}
+	.extraDark {
+		color: #0b4b66;
+	}
+	.totalDark {
+		color: #07364a;
+	}
+	.textDark {
+		color: #11181c;
+	}
+	.textLight {
+		color: #3b3b3b;
+	}
+	* {
+		font-family: "Inter Tight Variable";
+	}
+	.iconAwesome {
+		color: #009ed0;
+	}
+	.buttonDefault {
+		background-color: #7ce0fd;
+		color: #0f5574;
+	}
+</style>

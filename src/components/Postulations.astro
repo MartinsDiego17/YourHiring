@@ -1,0 +1,35 @@
+---
+import BarPostulation from "./postulaciones/BarPostulation";
+---
+
+<div id="hola" class="w-[75%] h mx-auto h-screen">
+    <BarPostulation client:only="react" />
+</div>
+
+<style is:global>
+    .cardContainer {
+        min-width: 75vw;
+    }
+    .containerList {
+        min-height: 50vh;
+        height: 50vh;
+        max-height: 50vh;
+        width: 79vw;
+            }
+    .containerList::-webkit-scrollbar {
+        width: 15px;
+    }
+
+    .containerList::-webkit-scrollbar-track {
+        background-color: #222;
+    }
+
+    .containerList::-webkit-scrollbar-thumb {
+        background-color: #eee;
+        border-radius: 10px;
+    }
+
+    .containerList::-webkit-scrollbar-thumb:hover {
+        background-color: #ccc;
+    }
+</style>

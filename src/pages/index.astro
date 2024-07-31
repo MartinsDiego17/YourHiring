@@ -1,0 +1,14 @@
+---
+import Header from "../components/Header.astro";
+import Home from "../components/Home.astro";
+import About from "../components/About.astro";
+import Postulations from "../components/Postulations.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="YourHiring">
+	<Header />
+	<Home client:onplay />
+	<About />
+	<Postulations />
+</Layout>

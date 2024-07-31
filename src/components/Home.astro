@@ -1,0 +1,29 @@
+---
+import { Button } from "@nextui-org/react";
+import "@fortawesome/fontawesome-free/css/all.css";
+
+const smoothScroll = (event : any) => {
+    event.preventDefault();
+    document.getElementById("hola")?.scrollIntoView({
+        behavior: "smooth",
+    });
+};
+---
+
+<div
+    class="leading-none pb-[10%] father w-screen h-screen flex flex-col justify-center place-items-center"
+>
+    <h1 class="max-sm:text-[3.5rem] 2xl:text-[8rem] textDark text-[5rem] font-extrabold">
+        Your<span class="medium">Hiring</span>
+    </h1>
+    <p class="max-sm:text-[1.1rem] max-sm:mb-[4%] 2xl:text-[1.85rem] text-[1.4rem] text-[#888] tracking-[1px] mt-[1%]">
+        Optimiza al máximo tu búsqueda laboral
+    </p>
+    <Button
+        className="2xl:text-[1.3rem] 2xl:py-[35px] 2xl:px-[40px] extraLight mt-[2%] buttonDefault rounded-full py-[25px] px-[30px] text-[1rem]"
+        onClick={smoothScroll}
+        client:visible
+    >
+        Mis postulaciones <i class="iconAwesome fa-solid fa-arrow-right-long"></i>
+    </Button>
+</div>
