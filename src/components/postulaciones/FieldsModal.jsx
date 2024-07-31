@@ -29,7 +29,7 @@ const FieldsModal = ({ dataPostulation, setDataPostulation }) => {
     }
 
     return (
-        <div className="grid grid-cols-2 gap-5">
+        <div className="grid grid-cols-2 max-sm:grid-cols-1 gap-5">
             <Input
                 name="brandName"
                 value={dataPostulation.brandName}
