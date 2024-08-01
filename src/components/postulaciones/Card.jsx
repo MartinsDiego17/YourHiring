@@ -17,6 +17,7 @@ const Card = ({
   setDataPostulation,
   errorSubmit,
   messageSuccess,
+  setLocalPostulations
 }) => {
 
   const truncString = (sword) => {
@@ -55,6 +56,7 @@ const Card = ({
           setDataPostulation={setDataPostulation}
           errorSubmit={errorSubmit}
           messageSuccess={messageSuccess}
+          setLocalPostulations={setLocalPostulations}
         />
       </article>
     </>

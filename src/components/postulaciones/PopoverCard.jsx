@@ -1,6 +1,7 @@
 import { Popover, PopoverTrigger, PopoverContent, Button } from "@nextui-org/react";
 import ModalPostulation from "./ModalPostulation";
 import { useState } from "react";
+import DeleteButton from "./DeleteButton";
 
 const PopoverCard = ({
     id,
@@ -18,6 +19,7 @@ const PopoverCard = ({
     setDataPostulation,
     errorSubmit,
     messageSuccess,
+    setLocalPostulations
 }) => {
 
     const [openPop, setOpenPop] = useState(false);
@@ -104,6 +106,14 @@ const PopoverCard = ({
                             }
                         </span>
                     </h4>
+
+                    <div className="flex justify-end">
+                        <DeleteButton
+                            setOpenPop={setOpenPop}
+                            id={dataPostulation.id}
+                            setLocalPostulations={setLocalPostulations}
+                        />
+                    </div>
 
                 </div>
             </PopoverContent>

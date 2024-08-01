@@ -152,6 +152,7 @@ export default function ListPostulations({
                                 setDataPostulation={setDataPostulation}
                                 errorSubmit={errorSubmit}
                                 messageSuccess={messageSuccess}
+                                setLocalPostulations={setLocalPostulations}
                             />
                         )) : <EmptyPostulation notFound={notFound} />
                 }
