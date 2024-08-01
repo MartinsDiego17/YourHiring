@@ -2,7 +2,7 @@
 import BarPostulation from "./postulaciones/BarPostulation";
 ---
 
-<div id="hola" class="w-[75%] h mx-auto h-screen">
+<div id="postulations" class="w-[75%] h mx-auto h-scree n mb-[40vh] ">
     <BarPostulation client:only="react" />
 </div>
 
@@ -11,25 +11,20 @@ import BarPostulation from "./postulaciones/BarPostulation";
         min-width: 75vw;
     }
     .containerList {
-        min-height: 50vh;
-        height: 50vh;
-        max-height: 50vh;
-        width: 79vw;
-            }
-    .containerList::-webkit-scrollbar {
-        width: 15px;
+        overflow: scroll;
+        overflow-x: hidden;
     }
 
-    .containerList::-webkit-scrollbar-track {
-        background-color: #222;
+    .containerList::-webkit-scrollbar {
+        width: 5px;
     }
 
     .containerList::-webkit-scrollbar-thumb {
-        background-color: #eee;
-        border-radius: 10px;
+        background-color: #333;
+        border-radius: 30px;
     }
 
     .containerList::-webkit-scrollbar-thumb:hover {
-        background-color: #ccc;
+        background-color: black;
     }
 </style>

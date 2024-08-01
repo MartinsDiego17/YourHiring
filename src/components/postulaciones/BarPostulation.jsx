@@ -84,7 +84,7 @@ const BarPostulation = () => {
 
     return (
         <>
-            <div className="flex max-sm:flex-col justify-between place-items-center" >
+            <div className="containerList flex max-sm:flex-col justify-between place-items-center" >
                 <h2 class="max-sm:text-[1.5rem] 2xl:text-[3rem] totalDark text-[2rem] font-extrabold">Postulaciones</h2>
                 <ModalPostulation
                     handleSubmit={handleSubmit}

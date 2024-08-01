@@ -3,7 +3,7 @@ import { Button, Link } from "@nextui-org/react"
 const ButtonRedirect = () => {
 
     const smoothScroll = () => {
-        document.querySelector("#hola")?.scrollIntoView({
+        document.querySelector("#postulations")?.scrollIntoView({
             behavior: 'smooth'
         });
     };

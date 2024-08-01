@@ -25,7 +25,7 @@ export default function ListPostulations({
     const [hasFilter, setHasFilter] = useState(false);
 
     useEffect(() => {
-        if(hasFilter) return;
+        if (hasFilter) return;
         if (!localPostulations.length) setLocalDisabled(true);
         else setLocalDisabled(false);
     }, [localPostulations, setLocalPostulations]);
@@ -115,8 +115,21 @@ export default function ListPostulations({
 
             </div>
 
+            {
+                localPostulations.length ?
+                    <article className="max-sm:mt-[10vh] place-items-center flex justify-between rounded-t-sm w-[75vw] p-[2%] py-[1%] bg-[#b9edfe]" >
+                        <p className="max-sm:text-[.8rem] 2xl:text-[1.15rem] w-1/4 text-[#222] text-[.9rem]" >Empresa</p>
+                        <p className="max-sm:text-[.8rem] 2xl:text-[1.15rem] w-1/4 text-[#222] text-center text-[.9rem]" >Cargo</p>
+                        <p className="max-sm:text-[.8rem] 2xl:text-[1.15rem] w-1/4 text-[#222] text-center text-[.9rem]" >Modalidad</p>
+                        <p className="max-sm:text-[.8rem] 2xl:text-[1.15rem] w-1/4 text-[#222] text-right text-[.9rem]" >
+                            <span className="max-sm:hidden">Fecha de postulación</span>
+                            <span className="max-sm:visible xl:hidden">Fecha</span>
+                        </p>
+                    </article> : <></>
+            }
             <div
-                className="containerList min-h-[50vh] h-[50vh] max-h-[50vh]"
+                className={`${localPostulations.length && "containerList"} w-[80vw] m-0  mr-auto min-h-[50vh] h-[50vh] max-h-[50vh]`}
+                id="container-list"
             >
                 {
                     localPostulations.length ?
