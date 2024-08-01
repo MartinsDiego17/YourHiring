@@ -37,7 +37,7 @@ const BarPostulation = () => {
         setValueText(value);
         const foundPost = searchPostulation(value);
         setLocalPostulations(foundPost);
-        if(value.length < 4) {
+        if (value.length < 4) {
             setLocalPostulations(getPostulations());
             setNotFound(false);
         }
@@ -78,14 +78,16 @@ const BarPostulation = () => {
     };
 
     useEffect(() => {
-        if(valueText.length > 4) return;
+        if (valueText.length > 4) return;
         setLocalPostulations(getPostulations());
     }, [errorSubmit, setErrorSubmit, dataPostulation, setDataPostulation, messageSuccess, setMessageSuccess]);
 
     return (
         <>
             <div className="containerList flex max-sm:flex-col justify-between place-items-center" >
-                <h2 class="max-sm:text-[1.5rem] 2xl:text-[3rem] totalDark text-[2rem] font-extrabold">Postulaciones</h2>
+                <h2 class="max-sm:text-[1.5rem] 2xl:text-[3rem] totalDark text-[2rem] font-extrabold">
+                    Postulaciones <span className="font-light opacity-50 max-sm:text-[1rem] 2xl:text-[2rem] text-[1.5rem]" >({getPostulations().length})</span>
+                </h2>
                 <ModalPostulation
                     handleSubmit={handleSubmit}
                     dataPostulation={dataPostulation}
