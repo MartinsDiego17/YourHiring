@@ -40,9 +40,9 @@ export const sortPostulations = (oper: string): Postulacion[] => {
 
     let sorteredPostulations: Postulacion[] = [];
 
-    if (oper === "Más antigua") sorteredPostulations = postulations.sort((a, b) => formatDate(b.date).getTime() - formatDate(a.date).getTime());
+    if (oper === "Más reciente") sorteredPostulations = postulations.sort((a, b) => formatDate(b.date).getTime() - formatDate(a.date).getTime());
 
-    else if (oper === "Más reciente") sorteredPostulations = postulations.sort((a, b) => formatDate(a.date).getTime() - formatDate(b.date).getTime());
+    else if (oper === "Más antigua") sorteredPostulations = postulations.sort((a, b) => formatDate(a.date).getTime() - formatDate(b.date).getTime()); 
 
     else sorteredPostulations = postulations;
 
