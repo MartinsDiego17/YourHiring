@@ -1,54 +1,45 @@
-# Astro Starter Kit: Basics
+# YourHiring
 
-```sh
-npm create astro@latest -- --template basics
-```
+Plataforma para gestionar postulaciones laborales de forma ordenada, sin perder el hilo de ningún proceso y sin depender de hojas de cálculo improvisadas.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+---
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Propuesta de valor
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+Buscar trabajo activamente significa manejar varios procesos al mismo tiempo: empresas en distintas etapas, entrevistas por agendar, respuestas que no llegan y ofertas que hay que comparar. Sin un sistema, todo eso vive en la memoria o en un Excel que rápidamente se vuelve inmanejable.
 
-## 🚀 Project Structure
+YourHiring centraliza todo en un solo lugar. Cada postulación tiene su estado, su historial y su contexto — para que el foco esté en prepararse para las entrevistas, no en recordar a qué empresas se aplicó la semana pasada.
 
-Inside of your Astro project, you'll see the following folders and files:
+---
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## Para quién es
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Para cualquier persona en búsqueda laboral activa que maneja más de un proceso a la vez y necesita claridad sobre dónde está parada en cada uno.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+---
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Qué permite hacer
 
-## 🧞 Commands
+**Registrar postulaciones**
+Guardá cada aplicación con los datos relevantes: empresa, rol, fecha, canal de contacto y cualquier nota útil.
 
-All commands are run from the root of the project, from a terminal:
+**Seguir el estado de cada proceso**
+Desde la postulación inicial hasta la oferta o el rechazo, cada etapa queda registrada y visible de un vistazo.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+**Tener contexto siempre disponible**
+Accedé al historial de cada postulación cuando lo necesitás: antes de una entrevista, al hacer un seguimiento o al evaluar una oferta.
 
-## 👀 Want to learn more?
+**Visualizar el panorama general**
+Una vista consolidada de todos los procesos activos para entender en qué etapa está cada uno sin tener que revisar registro por registro.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+---
+
+## Por qué YourHiring
+
+Porque buscar trabajo ya es suficientemente desgastante sin tener que administrar también el caos de los procesos. Una herramienta dedicada reduce la fricción, mejora el seguimiento y le devuelve al candidato el control sobre su búsqueda.
+
+---
+
+## Contacto
+
+**[tu@email.com](mailto:tu@email.com)**
