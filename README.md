@@ -40,6 +40,3 @@ Porque buscar trabajo ya es suficientemente desgastante sin tener que administra
 
 ---
 
-## Contacto
-
-**[tu@email.com](mailto:tu@email.com)**
